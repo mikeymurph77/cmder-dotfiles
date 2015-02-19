@@ -1,0 +1,46 @@
+e.=explorer .
+gl=git log --oneline --all --graph --decorate  $*
+ls=ls --color $*
+pwd=cd
+clear=cls
+
+# Git
+amend=git commit --amend
+amendne=git commit --amend --no-edit
+g=git
+ga=git add
+gall=git add -A
+gb=git branch
+gba=git branch -a
+gbd=git branch -d
+gc=git commit
+gcl=git clone
+gcm=git commit -m
+gco=git checkout
+gcp=git cherry-pick
+gd=git diff
+gf=git fetch
+ggl=git log --graph --all -20
+gmb=git checkout master && git merge @{-1}
+gnb=git checkout -b
+gpr=gh pull-request
+gra=git rebase --abort
+grc=git rebase --continue
+gri=git rebase -i
+grn=git branch -m $(git rev-parse --abbrev-ref HEAD)
+gs=git status -s
+gup=git fetch origin && git rebase origin/master
+gps=git push
+gpsf=git push -f
+gpl=git pull
+
+# Bunde
+b=bundle
+be=bundle exec
+bi=bundle install
+
+# Rails
+c=rails console
+migrate=rake db:migrate db:rollback && rake db:migrate
+m=migrate
+s=rspec
